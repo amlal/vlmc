@@ -17,18 +17,13 @@ In order to initiate this class,
 	model = Continuator(symbolic_seq,dictionary1,dictionary2,boundaries,maxlen)
 
 where: 
-	'symbolic_seq' is the sequence of symbols you wish to model. This program is designed to work with a 
-	list or np.ndarray of chars. This also applies the limitation that there cannot be more than 94 unique
-	symbols in the sequence.
+'symbolic_seq' is the sequence of symbols you wish to model. This program is designed to work with a list or np.ndarray of chars. This also applies the limitation that there cannot be more than 94 unique	symbols in the sequence.
 
-	'dictionary1' and 'dictionary2' contain features or vectors associated with each of the unique symbols in
-	the symbolic sequence. These are included so the model can be pickled and used independentaly of an 
-	analysis method. In future versions, you will be able to use the model without these.
+'dictionary1' and 'dictionary2' contain features or vectors associated with each of the unique symbols in the symbolic sequence. These are included so the model can be pickled and used independently of an analysis method. In future versions, you will be able to use the model without these.
 
-	'boundaries' are the list location indices of boundaries that should be used to segment the symbolic 
-	sequence. In the context of music, these are used to segment the symbolic sequence into phrases.
+'boundaries' are the list location indices of boundaries that should be used to segment the symbolic sequence. In the context of music, these are used to segment the symbolic sequence into phrases.
 
-	'maxlen' is the maximum allowed phrase length. This will be deprecated eventually.
+'maxlen' is the maximum allowed phrase length. This will be deprecated eventually.
 
 For further interaction, 
 
